@@ -20,7 +20,7 @@ if __name__ == '__main__':
     # 权重矩阵和输入矩阵相乘再加上偏置
     z = tf.multiply(X, W) + b
 
-    # 计算损失函数（方差）
+    # 计算损失函数的输出（方差）
     cost = tf.reduce_mean(tf.square(Y - z))
     # 定义梯度下降学习率
     learn_rate = 0.01
